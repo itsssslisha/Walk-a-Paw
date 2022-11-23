@@ -1,0 +1,14 @@
+.contact_form{
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    margin: 10% 30% 0 30%;
+}
+input{
+    text-align: left;
+    height: 30px;
+    margin-bottom: 2%;
+}
+#problem{
+    padding: 5%;
+}
