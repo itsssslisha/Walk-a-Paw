@@ -46,8 +46,8 @@ input{
     align-items: flex-end;
 }
 .toast{
-    background-color: white;
-    color: rebeccapurple;
+    background-color: teal;
+    color: white;
     border-radius: 5px;
     padding: 1rem 2rem;
     margin: 0.5rem;
