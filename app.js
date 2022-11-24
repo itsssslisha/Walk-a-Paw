@@ -18,7 +18,7 @@ const limiter = rateLimit({
 var db = new sqlite3.Database('./database/contact.db');
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname)));
 app.use(helmet());
 app.use(limiter);
 
@@ -26,7 +26,7 @@ db.run('CREATE TABLE IF NOT EXISTS contact(first_name TEXT, last_name TEXT, emai
 
 //Get request
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, './contact.html'))
+    res.sendFile(path.join(__dirname, 'contact.html'))
 });
 
 //if site URL doesn't exist, display error code 404, with the message page does not exist
@@ -41,8 +41,13 @@ app.post('/add', function (req, res) {
                 return console.log(err.message);
             }
             console.log("New contact info has been added");
-            res.send("New contact info has been added into the database with first name = " + req.body.first_name + " last name = " + req.body.last_name +
-                " with email = " + req.body.email + " and phone number " + req.body.phone_number + " who has the follow problem : " + req.body.problem);
+
+            var delayInMilliseconds = 5000;
+
+            setTimeout(function () {
+                res.sendFile(path.join(__dirname, 'index.html'))
+            }, delayInMilliseconds);
+
         });
     });
 });
