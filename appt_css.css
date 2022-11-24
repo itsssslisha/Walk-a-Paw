@@ -1,0 +1,86 @@
+body {
+    font-size: 25px;
+}
+
+
+.appt-container {
+    flex: 1;
+    border: 5px solid green;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.cart-container {
+    border: 5px solid green;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.book-container {
+    border: 5px solid green;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.main-container {
+    display: flex;
+    text-align: center;
+}
+
+#appt {
+    width: 300px;
+}
+
+#appt tr[draggable="true"] {
+    height: 50px;
+}
+
+#cart {
+    width: 300px;
+}
+
+#cart tr[draggable="true"] {
+    height: 50px;
+}
+
+#book {
+    width: 300px;
+}
+
+#book tr[draggable="true"] {
+    height: 50px;
+}
+
+.container {}
+
+
+td,
+th {
+    border: 2px solid black;
+    cursor: all-scroll;
+}
+
+table {
+    margin: 0 auto;
+}
+
+tr.border,
+td.border {
+    border: 2px solid black;
+    height: 20px;
+}
+
+.cart-button {
+    padding-left: 510px;
+
+}
+
+.delete-button {
+    padding-left: 510px;
+
+}
