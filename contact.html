@@ -29,23 +29,22 @@
             <h1>Contact Us!</h1>
             <p>We will get back to you as soon as possible</p>
             <label for="first_name">First Name</label>
-            <input type="text" id = "first_name">
+            <input type="text" id = "first_name" required>
+            
             <label for="last_name"> Last Name</label>
-            <input type="text" id="last_name"><br>
+            <input type="text" id="last_name" required><br>
             
             <label for="email">Email</label>
-            <input type="text" id="email"><br>
-            
+            <input type="email" id="email" required><br>
+
             <label for="phone_number">Phone Number</label>
-            <input type="text" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-458-7890"><br>
+            <input type="tel" id="phone_number" patern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="123-458-7890" ><br>
             
             <label for="problem">What can we help you with?</label>
-            <input type="text" id= "problem">
-            
-            <br>
-            
-            <button type ="reset">Reset</button>
-            <button type ="submit" value="add">Submit</button>
+            <textarea type="text" id= "problem" required></textarea><br>
+
+            <button type ="reset" class="btn">Reset</button>
+            <button type ="submit" value="add" class="btn">Submit</button>
         </form>
     </div>
     <!-- <script src="app.js"></script> -->

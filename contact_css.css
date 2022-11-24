@@ -3,12 +3,28 @@
     background-color: antiquewhite;
     border-radius: 50px;
     margin: 10% 30% 0 30%;
+    box-shadow: 20px 20px 20px gray;
 }
 input{
     text-align: left;
     height: 30px;
     margin-bottom: 2%;
+    margin-top: 2%;
+}
+#phone_number{
+    margin-right: 8% ;
 }
 #problem{
-    padding: 5%;
+    margin-right: 9%;
+    width: 40%;
+    height: 100px;
+}
+.problem_temp{
+    margin-top: 2%;
+}
+.btn{
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
