@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FocusApp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Section-->
+    <nav class="nav_bar" id="navbar">
+        <div class="nav_container">
+            <a href="home.html"><img src="images/focus3.png" alt="logo" class="logo"></a>
+            <ul class="nav_list">
+                <li><a href="home.html" class="navlink" id="home">HOME</a></li>
+                <li><a href="contact.html" class="navlink" id="about">CONTACT</a></li>
+                <li><a href="prices.html" class="navlink" id="faq">PRICES</a></li>
+                <li><a href="appt.html" class="navlink" id="login">APPOINTMENTS</a></li>
+                <li><a href="login.html" class="navbutton" id="getstart">LOG IN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="main">
+        <div class="hero_container">
+            <div class="hero_content">
+                <h1>Find Your Perfect<br /> Pet Walker </h1>
+                <h2>Take a break.<br /> As we provide fresh air to your pet</h2>
+                <button class="bookbtn"><a href="appt.html">Book Now</a></button>
+                <button class="demobtn"><a href="https://www.youtube.com/watch?v=WmzsjUWdfHs" target="_blank">View Demo</a></button>
+                <p class="start_free">&nbsp;For free. For you forever.<br />&nbsp;No credit card needed.</p>
+            </div>
+            <div class="main_img_container">
+                <img src="images/homeimg1.png" alt="homeimage" id="home_img">
+            </div>
+        </div>
+        <svg class ="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81cdc6" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,208C384,203,480,181,576,197.3C672,213,768,267,864,256C960,245,1056,171,1152,122.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- How Our Application Works Section -->
+    <div class="how_container">
+        <div data-aos="fade-right" data-aos-duration="1000" class="how_moto_content">
+            <h2>Manage complex tasks easily</h2>
+            <p>Thriving for efficency</p>
+            <a href="home.html"><img src="images/home_list_img.png" alt="logo" class="logo" width="10" height="70"></a>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="how_list">
+            <ol>
+                <li>
+                    <span>01 <br />Create a to-do list </span>
+                    <p>Get started by simply clicking on "add a new task" on the very right hand side and start adding all the tasks you have to complete. </p>
+                </li>
+                <li>
+                    <span>02 <br />View your tasks</span>
+                    <p>After adding your tasks, they will appear on the "view of upcoming task" window or you can click on "quick view of tasks" to view them.</p>
+                <li>
+                    <span>03 <br />Mark them done</span>
+                    <p>Once completing a task or tasks you can click on the task in the "view of upcoming task" window to remove it. View your past tasks in "view all tasks."</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Counter Section -->
+    <div class="moto">
+        <p><strong>Helping </strong>people like you <strong>get the job done</strong></p>
+    </div>
+    <div class="counter_section">
+        <div class="counter_container">
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class="counter" data-target="302678"></div>
+            <span>Tasks Completed</span>
+        </div>
+        <div class="counter_container">
+            <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
+            <div class="counter" data-target="250"></div>
+            <span>Partnered Companies</span>
+        </div>
+        <div class="counter_container">
+            <i class="fa fa-heart-o fa-5x" aria-hidden="true"></i>
+            <div class="counter" data-target="4329"></div>
+            <span>Satisfied Customers</span>
+        </div>
+        <script src="js/counter.js"></script>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social_media">
+            <a href="home.html"><img src="images/focus3.png" alt="logo" class="footer_logo"></a>
+
+            <p class="website_rights">&copy; FOCUS 2022. All rights reserved</p>
+            <div class="social_icons">
+                <a class="icon_link" href="/" target="_blank" aria-label="Facebook">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="/" target="_blank" aria-label="Instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                    target="_blank" aria-label="Youtube">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="/" target="_blank" aria-label="Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
