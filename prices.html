@@ -9,9 +9,11 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous">
     <link href="navbar.css" rel="stylesheet" />
+    <link href="prices.css" rel="stylesheet" />
     <link href="priceSlider.css" rel="stylesheet" />
     <link href="reviews.css" rel="stylesheet" />
     <link href="modal.css" rel="stylesheet" />
+    <link href="toast.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -50,6 +52,8 @@
                     for the price that our walker charges.
                 </p>
                 <img src="apuapu.png" class="catto">
+                <input type="submit" style="display: none;" id="submit">
+                <input type="submit" style="display: none;" id="reset">
             </div>
 
             <div class="slide" style="background-color: teal;">
@@ -75,7 +79,7 @@
                     Our price for this package is: $10/hr/day.
                 </p>
             </div>
-            
+
             <div class="slide" style="background-color: teal;">
                 <h1> Pawfection Package : </h1>
                 <p style="margin-top: 5%;">"Pawfection Package" our premium tier package. </p>
@@ -119,22 +123,147 @@
 
     <div id=buttons>
         <table>
-    <td><button type="button" id="pawsome" onclick=modal(id)>Buy Pawsome Package</button></td>
-    <td><button type="button" id="pawfection" onclick=modal(id)>Buy Pawfection Package</button></td>
-    </table>
-    
-    
+            <td><button type="button" id="pawsome" onclick=modal(id)>Buy Pawsome Package</button></td>
+            <td><button type="button" id="pawfection" onclick=modal(id)>Buy Pawfection Package</button></td>
+        </table>
+    </div>
+
+
     <div id="pawsomeModal" class="modal">
         <div class="modal-content">
             <span class="pawsomeClose">&times;</span>
             <h2>Buy the Pawsome package</h2>
-            
+            <form class="credit-card" id="pawsomeForm">
+                <div class="form-header">
+                    <h4 class="title">Credit card detail</h4>
+                </div>
+
+                <div class="form-body">
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                    <br>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" class="card-number" placeholder="1111-2222-3333-4444" required>
+
+                    <div class="date-field">
+                        <div class="month">
+                            <label for="Month">Exp Month</label>
+                            <select name="Month" required>
+                                <option value="">Please select</option>
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </div>
+                        <div class="year">
+                            <label for="Month">Exp Year</label>
+                            <select name="Year" required>
+                                <option value="">Please select</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-verification">
+                        <div class="cvv-input">
+                            <label for="cvv">CVV</label>
+                            <input type="text" placeholder="352" required>
+                        </div>
+                    </div>
+                    <button type="button" id="proceed_pawsome">Proceed</button>
+                    <div id="toast1"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="pawfectionModal" class="modal">
+        <div class="modal-content">
+            <span class="pawfectionClose">&times;</span>
+            <h2>Buy the Pawfection package</h2>
+            <form class="credit-card"  id="pawfectionForm">
+                <div class="form-header">
+                    <h4 class="title">Credit card detail</h4>
+                </div>
+
+                <div class="form-body">
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                    <br>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" class="card-number" placeholder="1111-2222-3333-4444" required>
+
+                    <div class="date-field">
+                        <div class="month">
+                            <label for="Month">Exp Month</label>
+                            <select name="Month" required>
+                                <option value="">Please select</option>
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </div>
+                        <div class="year">
+                            <label for="Month">Exp Year</label>
+                            <select name="Year" required>
+                                <option value="">Please select</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-verification">
+                        <div class="cvv-input">
+                            <label for="cvv">CVV</label>
+                            <input type="text" placeholder="352" required>
+                        </div>
+                    </div>
+
+                    <button type="button" id="proceed_pawfection">Proceed</button>
+                    <div id="toast2"></div>
+                </div>
+            </form>
         </div>
     </div>
 
     <script src="priceSlider.js"></script>
     <script src="reviews.js"></script>
     <script src="modal.js"></script>
+    <script src="notif.js"></script>
 </body>
 
 </html>

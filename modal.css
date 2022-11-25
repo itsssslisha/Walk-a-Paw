@@ -34,7 +34,7 @@
     width: 50%;
     height: 30em;
     text-align: center;
-    overflow: scroll;
+    overflow: hidden;
     border-radius: 10px;
 }
 
