@@ -12,7 +12,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    margin-bottom: 20vh;
+    margin-bottom: 35vh;
     z-index: 1;
     width: 100%;
     max-width: 1720px;
@@ -24,6 +24,7 @@
 }
 .hero_content h1 {   
     font-size: 62px;
+    color:rgb(93, 95, 95);
 }
 
 .hero_container h2 {
@@ -53,6 +54,23 @@
     font-size: 16px;
     text-decoration: none;
 }
+/* .bookbtn:focus {
+    outline:none;
+}
+.bookbtn .circle {
+    position: absolute;
+    background-color: white;
+    width:100px;
+    height: 100px;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    animation: scale 0.5s ease-out;
+}
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+    }
+} */
 
 /*
 .bookbtn:after {
@@ -115,13 +133,6 @@
     width: 100%;
 }
 
-.start_free {
-    margin-top: 0.5rem;
-    font-size: 15px;
-    font-weight: lighter;
-    color: gray;
-}
-
 .main_img_container {
     text-align:center;
 }
@@ -131,112 +142,231 @@
     width: 100%;
 }
 
-.wave {
-    position:relative;
-    margin-top: 2rem;
-}
-/* How To Section */
+/* Why Walkapaw */
 .how_container {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     justify-self: center;
-    margin: 0 auto;
-    height: 50vh;
     z-index: 1;
-}
-
-.how_moto_content h2 {
-    padding-right: 50px;
-    padding-left: 50px;
-    font-size: 35px;
-    font-weight:lighter;
-    width:100%;
-}
-
-.how_moto_content p {
-    padding-right: 50px;
-    padding-left: 50px;
-    font-size: 22px;
     font-weight: lighter;
-    color: rgb(87, 86, 86);
+}
+
+.wave{
+    margin-top: -58vh;
+    margin-bottom: 30vh;;
+}
+.how_moto_content {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 28px;
     width:100%;
+    color:rgb(93, 95, 95);
+    position:relative;
+    top:-430px;
+    left:430px;
 }
-
-.how_moto_content img{
-    margin-top:50px;
-    width:29vw;
-    height:460px;
-}
-
 .how_list ol {
     list-style:none;
     width:70%;
-    margin-top: 70px;
 }
 
 .how_list li {
     font-size: 21px;
     margin-bottom: 35px;
     margin-top: 35px;
-    border-bottom: 1px solid #ebebeb;
+    position:relative;
+    top:-210px;
+    
 }
-
-.how_list li span {
-    color:#F24726;
+.how_list span {
+    margin-left: 130px;
     font-weight: bold;
-    position:absolute;
-    left:-99px;
-    text-align:center;
-}
+    font-size: larger;
+    color:rgb(93, 95, 95);
 
+}
+.how_list li .pets {
+    position:absolute;
+    left:-200px;
+    border-radius: 50%;
+    display:flex;
+
+}
+#divider2 {
+    position: relative;
+    top:165px;
+    left:-89px;
+    justify-self: center;
+    align-items: center;
+}
+#divider3 {
+    position: relative;
+    top:335px;
+    left:-182px;
+    justify-self: center;
+    align-items: center;
+}
 .how_list li p{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     padding-left: 130px;
-    line-height: 30px;
+    margin-top: 3%;
+    line-height: 21px;
     opacity: 0.6;
     align-content: center;
 }
+/* Info section636 CSS */
 
-/* Counter Section */
-.moto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25%;
+.infoSection{
+    height: 700px;
 }
 
-.moto p{
-    font-size: 28px;
-}
-.counter_section {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:70vh;
-    overflow:hidden;
-    margin:0;
-}
-
-.counter_container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+.infoHeader{
     text-align: center;
-    margin:10px 120px;
-}
+    margin-bottom: 60px;
+    position:relative;
+    bottom:50px;
 
-.counter_container .counter {
-    font-size: 55px;
-    margin-top:10px;
-    color: #F24726;
 }
-
-.counter_container span{
+.infoHeader h1 {
+    color:rgb(93, 95, 95);
+    font-size: 40px;
+}
+.infoHeader P{
+    color:teal;
     font-size: 20px;
-    margin-top:15px;
-    color: #f36c51;
+
 }
+.infoCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infoCards .card{
+    position: relative;
+    height: 390px;
+    width: 306px;
+    background: #F2F2F2;
+    box-shadow: 0 8px 16px 0 rgba(117, 246, 214, 0.2);
+    border: 5px double teal;
+    border-radius: 70px;
+}
+
+.infoCards .one .cardoneImg{
+    width: 296px;
+    height: 195px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+.loveMe .fa-heart {
+    animation:grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity:0;
+    }
+}
+.infoCards .two .cardtwoImg{
+    width: 296px;
+    height: 195px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+.infoCards .three .cardthreeImg{
+    width: 296px;
+    height: 195px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+
+.cardContent h3{
+    text-align: center; 
+    opacity: 0.7;
+    margin-top: 200px;
+    padding:10px 10px 10px 10px;
+}
+.cardContent p{
+    text-align: center; 
+    font-size:14px;
+}
+/* Meet the Team */
+
+.team h2 {
+    text-align: center;
+    font-size: 38px;
+    color:rgb(93, 95, 95);
+    margin-top: -131px;
+    margin-bottom: 80px;
+}
+.slideshow-container {
+    max-width: 50%;
+    position: relative;
+    top: 50%;
+    left: 15%;
+
+  }
+  .text {
+    padding: 98px 19px;
+    width: 70%;
+    position: absolute;
+    top:-30px;
+    left:70%;
+    line-height: 25px;
+  }
+  .text h2{
+    color: teal;
+    margin-bottom: 20px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 40px;
+    margin-top: 38px;
+
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
