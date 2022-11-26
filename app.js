@@ -45,7 +45,7 @@ app.post('/add', function (req, res) {
             var delayInMilliseconds = 5000;
 
             setTimeout(function () {
-                res.sendFile(path.join(__dirname, 'index.html'))
+                res.sendFile(path.join(__dirname, 'home.html'))
             }, delayInMilliseconds);
 
         });

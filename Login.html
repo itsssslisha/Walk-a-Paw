@@ -4,31 +4,36 @@
 <head>
     <meta charset="uft-8">
     <title>Login</title>
-    <link href="Login.css" rel="stylesheet">
-    
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/Login.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- <img src="focusLogo2.0.png" alt="Focus Logo" width="150" height="70"> -->
+    <nav class="nav_bar" id="navbar">
+        <div class="nav_container">
+            <a href="home.html"><img src="images/walkapaw.png" alt="logo" class="logo"></a>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="background" id="background"></div>
         <h1>Sign In</h1>
 
-        <form action="#home">
+        <form action="home.html">
             <div class="form-control">
                 <label for="email/user">Username/Email</label>
                 <input type="text" name="email/user" required>
-                
+
             </div>
 
             <div class="form-control">
                 <label for="pass">Password</label>
                 <input type="password" id="pass" name="pass" required>
-                <script src="Background.js"></script>
+                <script src="js/Background.js"></script>
             </div>
-            
-            
+
+
             <div class="bottom">
                 <span class="psw"> <a href="#">Forgot password?</a></span>
 
@@ -37,12 +42,12 @@
                     <label for="checked">Remember me</label><br>
                 </span>
             </div>
-            
-            <button class="ripple", type="submit">Login </button>
-            <script src="Ripple.js"></script>
+
+            <button class="ripple" type="submit">Login </button>
+            <script src="js/Ripple.js"></script>
         </form>
     </div>
-    
+
 </body>
 
 </html>

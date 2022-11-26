@@ -1,0 +1,127 @@
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: #228B22;
+  }
+ 
+  .background{
+    background: url('../images/cutedog.png') no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+  }
+  
+  .form-control label {
+    font-size: large;
+    color: #228B22;
+    margin-left: 0%;
+    /* float: inline-start;
+    position: absolute; 
+    top: 10;
+    left: 20;  */
+  }
+  
+  input[type=text], input[type=password] {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    align-self: flex-start;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* display: grid; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    
+  }
+  
+  button {
+    background-color: #228B22;
+    color: white;
+    padding: 15px 20px;
+    margin-left: 32%;
+    margin-top: 2%;
+    border: none;
+    /* cursor: pointer; */
+    width: 36%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  button.focus{
+    outline: none;
+  }
+
+  button .circle{
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+
+  @keyframes scale{
+    to {
+      transform: translate(-50%, -50%) scale(2);
+      opacity: 0;
+    }
+  }
+
+  /* button:hover {
+    opacity: 0.8;
+  } */
+  
+  span.psw{
+    float: left;
+    margin-left: 5%;
+  }
+  
+  .checkbox {
+    float: right;
+    margin-right: 5%;
+    color: #228B22;
+  }
+  
+  .container { 
+    margin: 25px auto;
+    background-color: white;
+    padding: 20px 0px;
+    width: 50%;
+    box-shadow: 10px 10px 8px 10px #228B22;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 20px 40px;
+  }
+  
+  .text {
+    margin-top: 30px;
+  }
+  
+  .form-control {
+    position: relative;
+    margin: 20px 0 40px;
+  }
+  
+
+  
+  .form-control input {
+    background-color: transparent;
+    /* border: 0;
+    border-bottom: 2px #000 solid; */
+    display: block;
+    width: 100%;
+    padding: 10px 7px;
+    font-size: 18px;
+  }
+  
+  .form-control input:focus, 
+  .form-control input:valid {
+    outline: 0;
+  }
+  
