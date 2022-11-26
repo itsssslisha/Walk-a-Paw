@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Walk-a-Paw</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="appt_css.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navbar Section-->
+    <nav class="nav_bar" id="navbar">
+        <div class="nav_container">
+            <a href="index.html"><img src="images/focus3.png" alt="logo" class="logo"></a>
+            <ul class="nav_list">
+                <li><a href="index.html" class="navlink" id="home">HOME</a></li>
+                <li><a href="contact.html" class="navlink" id="about">CONTACT</a></li>
+                <li><a href="prices.html" class="navlink" id="faq">PRICES</a></li>
+                <li><a href="login.html" class="navlink" id="login">LOGIN</a></li>
+                <li><a href="appointments.html" class="navbutton" id="getstart">APPOINTMENTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="appt-container">
+                <table id="appt">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Appointments &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td class="border"></td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="a">Mon: 9:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="b">Mon: 10:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="c">Mon: 11:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="d">Tu: 9:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="e">Tu: 10:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="f">Tu: 11:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="f">Wed: 9:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="g">Wed: 10:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="h">Wed: 11:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="i">Thur: 9:15AM</td>
+                        </tr>
+                        <tr draggable="true" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td id="j">Thur: 10:15AM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="cart-container">
+                <table id="cart">
+                    <thead>
+                        <tr>
+                            <th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border" ondragstart="start(event)" ondragover="dragover(event)">
+                            <td class="border"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="book-container">
+                <table id="book">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Booked&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        </tr>
+                    </thead>
+
+
+                </table>
+            </div>
+        </div>
+
+    <div class=button>
+        <div class="cart-button">
+            <button class="c-button" onclick="myFunction()">Book Appointment</button>
+        </div>
+        <div class="delete-button">
+            <button class="c-button" onclick="myFunction_2()">Delete Appointment</button>
+        </div>
+    </div>
+
+     <div class="notes">
+        <form>
+            
+            <div class="row">
+                <div class="name">
+                    <label for="feed_back">Any Special Accommodations?</label>
+                </div>
+                <div class="field">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+     </div>
+    </div>
+    <script src="appt_js.js"></script>
+</body>
+
+</html>
