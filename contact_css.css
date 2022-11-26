@@ -1,0 +1,33 @@
+
+.contact_form{
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    /* margin: 10% 30% 0 30%; */
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 20px 20px 20px gray;
+}
+
+input{
+    text-align: left;
+    height: 30px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#phone_number{
+    margin-right: 8% ;
+}
+
+#problem{
+    margin-right: 9%;
+    width: 40%;
+    height: 100px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover
+}
