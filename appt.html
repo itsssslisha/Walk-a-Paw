@@ -5,8 +5,10 @@
     <title>Walk-a-Paw</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet" />
     <link href="css/appt.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet">
 </head>
 
 <body>
@@ -109,12 +111,12 @@
             </div>
         </div>
 
-        <div class=button>
+        <div class="button">
             <div class="cart-button">
-                <button class="c-button" onclick="myFunction()">Book Appointment</button>
+                <button class="c-button" onclick="bookFunction()">Book Appointment</button>
             </div>
             <div class="delete-button">
-                <button class="c-button" onclick="myFunction_2()">Delete Appointment</button>
+                <button class="c-button" onclick="deleteFunction()">Delete Appointment</button>
             </div>
         </div>
 
@@ -137,6 +139,32 @@
         </div>
     </div>
     <script src="js/dragndrop.js"></script>
+
+    <footer class="footer">
+        <div class="social_media">
+            <a href="home.html"><img src="images/walkapaw.png" alt="logo" class="footer_logo"></a>
+
+            <p class="website_rights">&copy; Walk-a-Paw 2022. All rights reserved</p>
+            <div class="social_icons">
+                <a class="icon_link" href="/" target="_blank" aria-label="Facebook">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="/" target="_blank" aria-label="Instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                    target="_blank" aria-label="Youtube">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="/" target="_blank" aria-label="Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="icon_link" href="/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

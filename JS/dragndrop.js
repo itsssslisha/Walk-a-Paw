@@ -63,7 +63,7 @@ function sortTable(tableName) {
 }
 let y;
 let states = [];
-function myFunction() {
+function bookFunction() {
     if (document.getElementById("cart").rows[2] != null) {
         let deletedRow = document.getElementById("cart").rows[2];
         let x = document.getElementById("book").insertRow();
@@ -75,7 +75,7 @@ function myFunction() {
     }
 }
 
-function myFunction_2() {
+function deleteFunction() {
     //let deletedRow = document.getElementById("book").rows[1];
     if (y != null) {
         if (states.length != 0) {
@@ -88,6 +88,4 @@ function myFunction_2() {
     }
     //alert(q.outerHTML  );
     sortTable("appt");
-
-
 }
