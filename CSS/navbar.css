@@ -7,11 +7,11 @@
 }
 
 /* Navbar and Logo*/
+
 .nav_bar {
   position: sticky;
   font-size: 20px;
   transition: all .3s ease-in-out;
-  z-index: 999;
   font-weight: bold;
   background-color: antiquewhite;
   border-bottom: 0.2px solid rgb(220, 220, 220);

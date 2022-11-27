@@ -1,6 +1,6 @@
 .credit-card {
     width: 360px;
-    margin: 60px auto;
+    margin: 10px auto;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #fff;
@@ -46,9 +46,18 @@
 .month select,
 .year select {
     opacity: .7;
-    color: #86939e;
+    color: black;
 }
 
 label {
     color: teal;
+}
+
+#proceed_pawsome , #proceed_pawfection {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#toast1, #toast2 {
+    overflow: scroll;
 }

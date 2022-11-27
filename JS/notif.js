@@ -97,12 +97,14 @@ function buyPawsomeFunction() {
     checker = true;
     modalForms(pawsomeForm);
     createNotification(toast1, messages[3]);
+    if (checker == true) setTimeout("location.href = 'appt.html';",5000);
 }
 
 function buyPawfectionFunction() {
     checker = true;
     modalForms(pawfectionForm);
     createNotification(toast2, messages[3]);
+    if (checker == true) setTimeout("location.href = 'appt.html';",5000);
 }
 
 function createNotification(toasts=null , message = null) {
