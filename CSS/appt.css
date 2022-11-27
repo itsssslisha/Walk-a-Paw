@@ -1,26 +1,28 @@
-body {
-    font-size: 25px;
-}
-
 .notes {
-    margin-left: 50px;
+    width: 15%;
+    margin-right: 2%;
 }
 
 td,
 th {
-    border: 2px solid black;
+    
     cursor: all-scroll;
     background-color: #3e8e41;
     color: white;
 }
 
+th {
+    border: 2px solid black;
+    font-size: .8vw;
+}
+
 td {
     background-color: #3e8e41;
-
 }
 
 table {
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
 }
 
 tr.border,
@@ -29,68 +31,42 @@ td.border {
     height: 20px;
 }
 
-.appt-container {
-    flex: 1;
-    border: 5px solid #666;
-    height: auto;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: #666;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.cart-container {
-    border: 5px solid #666;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: #666;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.book-container {
-    border: 5px solid #666;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: #666;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .main-container {
+    margin: 10px 0;
     display: flex;
+    justify-content: space-between;
     text-align: center;
+    /* width: 100%; */
+    /* border: 1px solid black */
 }
 
-#appt {
-    width: 300px;
+.container {
+    width: 20%;
+    margin-left: 2%;
 }
 
-#appt tr[draggable="true"] {
+.appt-container, .cart-container, .book-container{
+    flex: 1;
+    width: 100%;
+    border: 5px solid #666;
+    background-color: #666;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#appt tr[draggable="true"], #cart tr[draggable="true"],  #book tr[draggable="true"]{
     height: 50px;
+    width: 20%;
 }
 
-#cart {
-    width: 300px;
-}
 
-#cart tr[draggable="true"] {
-    height: 50px;
-}
-
-#book {
-    width: 300px;
-}
-
-#book tr[draggable="true"] {
-    height: 50px;
+.button {
+    width: 15%;
+    margin: 10px 0;
 }
 
 .c-button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
+    /* display: inline-block; */
+    padding: 15px 5%;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -100,7 +76,7 @@ td.border {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    
+    margin-bottom: 20px;
 }
 
 .c-button:hover {
@@ -113,21 +89,11 @@ td.border {
     transform: translateY(4px);
 }
 
-.cart-button {
-    padding-bottom: 20px;
-}
-
-.button {
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-
 input[type=text],
 select,
 textarea {
     width: 100%;
-    padding: 12px;
+    /* padding: 12px; */
     border: 1px solid rgb(70, 68, 68);
     border-radius: 4px;
     resize: vertical;
@@ -137,24 +103,23 @@ input[type=email],
 select,
 textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10%;
     border: 1px solid rgb(70, 68, 68);
     border-radius: 4px;
     resize: vertical;
 }
 
 label {
-    padding: 12px 12px 12px 0;
+    margin: 0;
     display: inline-block;
     color: green;
+    font-size: 1vh;
     font-weight: bold;
 }
 
 input[type=submit] {
-
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
+    padding: 15px 10%;
+    /* font-size: 24px; */
     cursor: pointer;
     text-align: center;
     text-decoration: none;
