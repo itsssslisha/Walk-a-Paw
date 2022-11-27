@@ -256,7 +256,7 @@
     border-radius: 70px;
 }
 
-.infoCards .one .cardoneImg{
+.infoCards img {
     width: 296px;
     height: 195px;
     position: absolute;
@@ -265,33 +265,18 @@
     border-top-right-radius: 70px;
     border-top-left-radius: 70px;
 }
+
 .loveMe .fa-heart {
-    animation:grow 0.6s linear;
+    animation: grow 1s linear;
     transform: translate(-50%, -50%) scale(0);
+    color:red;
 }
+
 @keyframes grow {
     to {
         transform: translate(-50%, -50%) scale(10);
         opacity:0;
     }
-}
-.infoCards .two .cardtwoImg{
-    width: 296px;
-    height: 195px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border-top-right-radius: 70px;
-    border-top-left-radius: 70px;
-}
-.infoCards .three .cardthreeImg{
-    width: 296px;
-    height: 195px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border-top-right-radius: 70px;
-    border-top-left-radius: 70px;
 }
 
 .cardContent h3{

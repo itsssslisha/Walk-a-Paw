@@ -19,47 +19,27 @@ function showSlides() {
 }
 
 
-// // class= circle 
-// const loveMe = document.getElementsByClassName('.loveMe')
+// class= circle 
+const loveMe = document.querySelectorAll('.loveMe')
 
-// loveMe.addEventListener('click', (e) => {
-//     console.log(123)
-// })
-// const createHeart = (e) => {
-//     const heart = document.createElement("i");
-//     heart.classList.add("fa");
-//     heart.classList.add("fa-heart");
-//     const x = e.clientX;
-//     const y = e.clientY;
-//     const leftOffset = e.target.offsetLeft;
-//     const topOffset = e.target.offsetTop;
-//     const xInside = x - leftOffset;
-//     const yInside = y - topOffset;
-//     heart.style.top = `${yInside}px`;
-//     heart.style.left = `${xInside}px`;
-//     loveMe.appendChild(heart);
-//     times.innerHTML = ++timesClicked;
-//     setTimeout(() => heart.remove(), 1000);
-//   };
+for (const luv of loveMe) {
+  luv.addEventListener('dblclick', (e) => {
+    createHeart(e, luv)
+  })
+}
 
-// buttons.forEach(button => {
-//     button.addEventListener('click', function (e) {
-//         const x = e.clientX
-//         const y = e.clientY
-
-//         const buttonTop = e.target.offsetTop
-//         const buttonLeft = e.target.offsetLeft
-
-//         const xInside = x - buttonLeft;
-//         const yInside = y - buttonTop;
-        
-//         const circle = document.createElement('span')
-//         circle.classList.add('circle')
-//         circle.style.top = yInside + 'px'
-//         circle.style.left = xInside + 'px'
-
-//         this.appendChild(circle)
-
-//         setTimeout(() => circle.remove(), 500)
-//     })
-// 
+function createHeart(e, luv) {
+  const heart = document.createElement('i');
+  heart.classList.add('fa');
+  heart.classList.add('fa-heart');
+  const x = e.clientX;
+  const y = e.clientY;
+  const leftOffset = e.target.offsetLeft;
+  const topOffset = e.target.offsetTop;
+  const xInside = x - leftOffset;
+  const yInside = y - topOffset;
+  heart.style.top = `${yInside}px`;
+  heart.style.left = `${xInside}px`;
+  luv.appendChild(heart);
+  setTimeout(() => heart.remove(), 1000);
+};
