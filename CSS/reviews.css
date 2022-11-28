@@ -49,11 +49,11 @@
     background-color: #fff;
     height: 4px;
     width: 100%;
-    animation: grow 10s linear infinite;
+    animation: timer 10s linear infinite;
     transform-origin: left;
 }
 
-@keyframes grow {
+@keyframes timer {
     0% {
         transform: scaleX(0);
     }

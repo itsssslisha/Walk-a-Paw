@@ -5,14 +5,15 @@
     <title>Walk-A-Paw</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous">
-    <link href="home.css" rel="stylesheet" />
-    <link href="navbar.css" rel="stylesheet" />
-    <link href="footer.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/navbar.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet">
     <link href="css/reviews.css" rel="stylesheet" />
+    <link href="css/homeSlider.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -21,17 +22,16 @@
     <!-- Navbar Section-->
     <nav class="nav_bar" id="navbar">
         <div class="nav_container">
-            <a href="home.html"><img src="images/waplogo.png" alt="logo" class="logo"></a>
+            <a href="home.html"><img src="images/walkapaw.png" alt="logo" class="logo"></a>
             <ul class="nav_list">
                 <li><a href="home.html" class="navlink" id="home">HOME</a></li>
-                <li><a href="contact.html" class="navlink" id="about">CONTACT</a></li>
+                <li><a href="http://localhost:3000/" class="navlink" id="about">CONTACT</a></li>
                 <li><a href="prices.html" class="navlink" id="faq">PRICES</a></li>
-                <li><a href="appt.html" class="navlink" id="login">APPOINTMENTS</a></li>
-                <li><a href="login.html" class="navbutton" id="getstart">LOG IN</a></li>
+                <li><a href="login.html" class="navlink" id="login">LOGIN</a></li>
+                <li><a href="appt.html" class="navbutton" id="getstart">APPOINTMENTS</a></li>
             </ul>
         </div>
     </nav>
-
     <!-- Home Page Content -->
     <div class="main">
         <div class="hero_container">
@@ -54,26 +54,34 @@
             <h2>Why Walk-A-Paw?</h2>
         </div>
         <div class="how_list">
-            <img src="images/pawline1.png" alt="pawline1" id="divider1" width="78px" height="206px">
-            <img src="images/pawline2.png" alt="pawline2" id="divider2" width="89px" height="180px">
-            <img src="images/pawline2.png" alt="pawline3" id="divider3" width="89px" height="180px">
+            <img src="images/pawline1.png" alt="pawline1" id="divider1" class="dividers" width="89px" height="206px">
+            <img src="images/pawline2.png" alt="pawline2" id="divider2" class="dividers" width="89px" height="180px">
+            <img src="images/pawline2.png" alt="pawline3" id="divider3" class="dividers" width="89px" height="180px">
             <ol>
                 <li>
                     <img src="images/dog1.png" class="pets" alt="puppy2" width="121px" height="121px">
-                    <span>Safety is our priority</span>
-                    <p>Your pet's safety is our top priority. Every pet walker goes through a thorough background check
-                        and we track the path they take. </p>
+                    <div class="sentence">
+                        <span>Safety is our priority</span>
+                        <p>Your pet's safety is our top priority. Every pet walker goes through a thorough background
+                            check
+                            and we track the path they take. </p>
+                    </div>
                 </li>
                 <li>
                     <img src="images/dog5.png" class="pets" alt="kitten" width="121px" height="121px">
-                    <span>Providing convenience</span>
-                    <p>We have made it easy for you to find the right pet walker for your pet and book them at any time
-                        and day. Whether you are planning a trip or are stuck with work, we offer you.</p>
+                    <div class="sentence">
+                        <span>Providing convenience</span>
+                        <p>We have made it easy for you to find the right pet walker for your pet and book them at any
+                            time
+                            and day. Whether you are planning a trip or are stuck with work, we offer you.</p>
+                    </div>
                 <li>
                     <img src="images/dogcat.png" class="pets" alt="kitten" width="121px" height="121px">
-                    <span>Been around the block</span>
-                    <p>We have been a trusted site for over 5 years! We have taken care over 40.3 million pets while
-                        recieving 5//5 stars. It's your turn now to take a break.</p>
+                    <div class="sentence">
+                        <span>Been around the block</span>
+                        <p>We have been a trusted site for over 5 years! We have taken care over 40.3 million pets while
+                            recieving 5//5 stars. It's your turn now to take a break.</p>
+                    </div>
                 </li>
             </ol>
         </div>
@@ -114,7 +122,7 @@
                 </div>
                 <div class="cardContent">
 
-                    <h3>Tina J <i class="fa fa-heart" aria-hidden="true"></i></h3>
+                    <h3>Tina J <i class="fa fa-heart" aria-hidden="true" style="margin-top:10px;"></i></h3>
                     <p>It's so easy to book a walker and the prices are amazing! My dog has a hard time with being
                         around new people, but all the walkers are so patient with him and are so kind.</p>
                 </div>
@@ -133,7 +141,7 @@
             </div>
         </div>
 
-        <div class="reviews-container">
+        <div class="reviews-container" style="margin-top: 50px;">
             <div class="progress-bar"></div>
             <div class="fas fa-quote-right fa-quote"></div>
             <div class="fas fa-quote-left fa-quote"></div>
@@ -175,7 +183,6 @@
                 <p>Hello - I hope each one of you reading this are doing fabulous! My name is Sukhnandan Kaur and I am
                     currently a senior majoring in computer science. I am aspiring to become a Software Engineer. Apart
                     from CS I love solving jigsaw puzzles and trying different ethnic food.</p>
-
             </div>
         </div>
 
@@ -235,7 +242,7 @@
     <!-- Footer Section -->
     <footer class="footer">
         <div class="social_media">
-            <a href="home.html"><img src="images/waplogo.png" alt="logo" class="footer_logo"></a>
+            <a href="home.html"><img src="images/walkapaw.png" alt="logo" class="footer_logo"></a>
 
             <p class="website_rights">&copy; Walk-a-Paw 2022. All rights reserved</p>
             <div class="social_icons">
@@ -259,7 +266,7 @@
         </div>
     </footer>
 
-    <script src="hearts.js"></script>
+    <script src="js/hearts.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/reviews.js"></script>
 </body>
