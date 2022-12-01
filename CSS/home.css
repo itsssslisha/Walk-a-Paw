@@ -87,6 +87,7 @@
     height: 100%;
     background-image: linear-gradient(to top, #a7a4be 0%, #141910 120%);
     transition: all 0.35s;
+    border-radius: 17px; 
 }
 
 .demobtn a:hover{
